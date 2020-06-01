@@ -30,7 +30,8 @@ import '../ImportComponents';
 
 const exapp = express();
 //Here we are configuring express to use body-parser as middle-ware.
-exapp.use(bodyParser.urlencoded({ extended: false }));
+exapp.use(bodyParser.urlencoded({limit: "50mb", extended: false, parameterLimit:5000000}));
+exapp.use(bodyParser.json({limit: "50mb"}));
 exapp.use(bodyParser.json());
 exapp.use(express.static("dist"));
 
