@@ -25,7 +25,6 @@ import App from "../App";
 import { StaticRouter } from "react-router-dom";
 import { Constants, EditorContext } from '@adobe/cq-react-editable-components';
 import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-
 import '../ImportComponents';
 
 const exapp = express();
